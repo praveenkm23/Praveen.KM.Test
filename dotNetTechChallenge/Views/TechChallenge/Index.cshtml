@@ -1,0 +1,52 @@
+﻿<div>
+    <div class="row">
+        <h2>Input:</h2>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-2">
+            Enter Person Name
+        </div>
+        <div class="col-md-10">
+            @Html.TextBox("txtPersonName")
+            <span id="nameValidation" class="hide text-danger">Please Enter Person Name</span>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-2">
+            Enter Input Number
+        </div>
+        <div class="col-md-10">
+            @Html.TextBox("txtNumber")
+            <span id="numberValidation" class="hide text-danger">Please Enter Valid Number. Only Numeric digits are allowed</span>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <input type="button" id="btnSubmit" value="Submit" onclick="processdata();" />
+    </div>
+    <br /><br />
+    <div id="outputsection" class="hide">
+        <div class="row">
+            <h2>Output:</h2>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-2">
+                Person Name:
+            </div>
+            <div class="col-md-10">
+                <p id="personName"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                Number In Words:
+            </div>
+            <div class="col-md-10 text-uppercase">
+                <p id="numberWords"></p>
+            </div>
+        </div>
+    </div>
+</div>
